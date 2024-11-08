@@ -1,0 +1,140 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+    background: url(../img/深海ヘッダー.jpg)center / cover no-repeat;
+}
+
+header img{
+    height: 100vh;
+    width: 100%;
+}
+
+#gnav{
+    width: 100%;
+    background: #0B005499;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    overflow-x: hidden;
+    background-color: rgb(11 ,0 ,84 / 80%);
+}
+
+#gnav .logo{
+    width: 100px;
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: #fff;
+    /* background: #55498B75; */
+    background-color: rgba(85, 73, 139, 80%);
+    justify-content: center;
+    
+}
+
+.logo span{
+    transform: rotate(-10deg);
+}
+
+#gnav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    line-height: 2px;
+}
+
+#gnav .page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#gnav a{
+    display: block;
+}
+
+#gnav a:hover{
+    opacity: .8;
+}
+
+#gnav .logo img{
+    display: block;
+}
+
+#gnav .page a{
+    height: 100%;
+    line-height: 100px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+
+main{
+    min-height: 100vh;
+    /* v2.追加コード */
+    padding: 80px 0;
+    background: url(../img/深海背景.jpg)center / cover no-repeat;
+}
+
+.gallery{
+    max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  
+}
+.sec-1,
+.sec-2,
+.sec-3{
+    display: flex;
+    align-items:center ;
+    color: #fff;
+    gap: 100px;
+}
+.gallery a{
+    font-size: 96px;
+    
+}
+
+
+.gallery span{
+    font-size: 50px;
+    transform: rotate(10deg);
+    display: block;
+}
+
+.sec-2 span{
+    transform: rotate(-10deg);
+    display: block;
+}
+
+
+.sec-2{
+    flex-direction: row-reverse; 
+
+}
+
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background: rgba(11, 0, 84, 0.60);}
+
+#copyright{
+    color: #fff;
+    font-size: 12px;
+}
